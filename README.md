@@ -104,7 +104,9 @@ This work supports analysis of solar energy adoption in resource-constrained env
 - Reduced performance on Lebanon highlights challenges in generalization:
   - smaller object size 
   - higher object density
-  - different spatial context  
+  - different spatial context
+- These results suggest the model is learning region-specific visual patterns rather than fully generalizable solar panel features
+- This demonstrates the importance of evaluating object detection models under domain shift, particularly for applications involving geographically diverse satellite imagery.
 
 ---
 
