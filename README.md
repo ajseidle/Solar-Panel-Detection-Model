@@ -81,6 +81,15 @@ This work supports analysis of solar energy adoption in resource-constrained env
 
 ---
 
+## How to Run
+
+pip install -r requirements.txt  
+python src/pipelines/general_control.py  
+
+> Note: Update file paths in `config.py` before running.
+
+---
+
 ## Results
 
 ### Model Performance
