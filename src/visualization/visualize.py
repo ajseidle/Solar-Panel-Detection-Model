@@ -1,7 +1,5 @@
 
 """
-Created on Mon Dec 15 17:40:47 2025 by @author: alonzo
-
 Purpose:
 Visualizes YOLO-annotated images with bounding boxes for spot-checking
 annotation quality and dataset integrity.
