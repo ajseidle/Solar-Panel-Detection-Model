@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Dec 16 13:52:08 2025
-
-@author: alonzo
-"""
-
 """
 create_data_yaml.py
 
