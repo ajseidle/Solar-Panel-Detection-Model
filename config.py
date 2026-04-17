@@ -101,9 +101,6 @@ AUGMENT_CONFIG = {
 
 # === Feature config for diagnostics ===
 FEATURE_CONFIG = {
-    # Relative-to-image normalization
-    "use_relative_brightness": True,
-    "use_relative_edge_density": True,
 
     # Brightness channel
     "brightness_space": "HSV_V",
