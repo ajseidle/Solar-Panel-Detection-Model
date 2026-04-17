@@ -78,10 +78,12 @@ This work supports analysis of solar energy adoption in resource-constrained env
 
 7. **Diagnostics**
    - Files: run_object_diagnostics.py, analyze_predictions.py, visualize_annotations.py
-   - Analyze detection quality using:
+   - Analyze detection quality using (run_object_diagnostics.py):
      - Edge density  
      - Shape features  
-     - Object-level filtering heuristics  
+     - Object-level filtering heuristics
+   - Compare actual vs predicted object counts and confidence per image (analyze_predictions.py)
+   - Visually inspect annotations and labeled images for quality control (visualize_annotations.py)
 
 ---
 
