@@ -12,15 +12,16 @@ This work supports analysis of solar energy adoption in resource-constrained env
 
 ## Dataset
 
+- Created custom dataset
+  
 - **Training Region:** Jordan (Mafraq, Irbid, Amman)  
 - **Testing Region:** Lebanon (refugee camp regions near Tripoli, Tyre, Beirut/Sidon)  
 - **Annotation Format:** YOLO  
 
 ### Preprocessing
 
-- Images tiled into **512×512 patches** with overlap  
+- Images/bounding boxes tiled into **512×512 patches** with overlap  
 - Empty tiles retained to provide negative examples  
-- Bounding boxes adjusted for tiled images  
 
 ### Key Challenges
 
@@ -57,14 +58,17 @@ This work supports analysis of solar energy adoption in resource-constrained env
 ## Pipeline Overview
 
 1. **Dataset Preparation**
+   - Files: split_dataset.py, tile_dataset.py, create_data_yaml.py
    - Split raw satellite images into train/validation sets  
    - Optionally apply tiling to increase effective resolution  
 
-2. **Model Training**
+3. **Model Training**
+   - Files: config.py, general_control.py
    - Initialize from pretrained `yolov10s.pt`  
    - Train using custom dataset and augmentation settings  
 
-3. **Evaluation**
+5. **Evaluation**
+   - Files: general_control.py
    - Evaluate performance using:
      - Precision  
      - Recall  
@@ -72,9 +76,9 @@ This work supports analysis of solar energy adoption in resource-constrained env
      - mAP@0.5:0.95  
      - F1 Score  
 
-4. **Diagnostics**
+7. **Diagnostics**
+   - Files: run_object_diagnostics.py, analyze_predictions.py, visualize_annotations.py
    - Analyze detection quality using:
-     - Relative brightness  
      - Edge density  
      - Shape features  
      - Object-level filtering heuristics  
@@ -84,9 +88,11 @@ This work supports analysis of solar energy adoption in resource-constrained env
 ## How to Run
 
 pip install -r requirements.txt  
-python src/pipelines/general_control.py  
+python general_control.py  
 
-> Note: Update file paths in `config.py` before running.
+> Note: Update dataset and file paths in `config.py` before running.
+
+> Note: This project was initially developed and executed in Google Colab. 
 
 ---
 
