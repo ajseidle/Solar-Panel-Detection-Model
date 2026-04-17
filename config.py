@@ -6,8 +6,7 @@ Central configuration file for the solar panel detection project.
 
 Edit this file to control dataset selection, training parameters,
 diagnostic behavior, and output locations without modifying pipeline logic.
-Paths are resolved relative to this file so the project remains portable
-across environments.
+
 """
 
 from pathlib import Path
