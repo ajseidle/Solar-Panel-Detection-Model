@@ -101,27 +101,12 @@ AUGMENT_CONFIG = {
 
 # === Feature config for diagnostics ===
 FEATURE_CONFIG = {
-
-    # Brightness channel
     "brightness_space": "HSV_V",
-
-    # Edge extraction
-    "edge_method": "canny",
     "canny_threshold1": 50,
     "canny_threshold2": 150,
-
-    # Shape features
-    "compute_shape_features": True,
-    "compute_compactness": True,
-    "compute_rectangularity": True,
-    "compute_aspect_ratio": True,
-
-    # Texture features
     "compute_texture_features": True,
     "texture_entropy_bins": 32,
     "compute_glcm_if_available": True,
-
-    # Numerical safety
     "eps": 1e-6,
 }
 
